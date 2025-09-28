@@ -4,7 +4,7 @@ import image2 from '../../assets/vector2.png'
 
 const Banner = () => {
     return (
-        <div className="md:flex justify-between text-center items-center text-white max-w-[1220px] mx-auto">
+        <div className="md:flex justify-between text-center items-center text-white max-w-[1220px] mx-auto mb-5">
 
             <div className="relative md:w-[570px] h-[250px] rounded-lg mt-5 bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)]">
                 <img src={image1} className="absolute left-0 top-1/2 -translate-y-1/2 w-[250px] h-full" />

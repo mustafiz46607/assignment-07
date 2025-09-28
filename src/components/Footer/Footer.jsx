@@ -6,7 +6,7 @@ import support from '../../assets/icons/support.png'
 
 const Footer = () => {
     return (
-        <div className='w-full mt-5  px-10 pb-5 bg-black border-2 border-red-500'>
+        <div className='w-full pt-5 px-10 pb-5 bg-black '>
             <div className=' md:grid grid-cols-5 gap-5 mb-5 mt-9 '>
                 <div >
                     <h1 className='text-xl font-semibold pb-3'>CS — Ticket System</h1>
