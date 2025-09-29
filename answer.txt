@@ -1,0 +1,22 @@
+******Questions******
+1. What is JSX, and why is it used?
+2. What is the difference between State and Props?
+3. What is the useState hook, and how does it work?
+4. How can you share state between components in React?
+5. How is event handling done in React?
+
+
+
+-------Answer-------
+1. JSX is a syntax extension for JavaScript that let us write HTML-like markup inside a JavaScript file.
+   JSX is not required to use React, but it makes building UI components faster, cleaner, and easier to understand.
+2. Props are used to pass data from parent to child components, while state is used to manage data that can change over time    within a component.
+3. The React useState Hook allows us to track state in a function component.
+    i)A state variable is just a value that React remembers between renders.
+    ii)When we call useState(initialValue), React keeps track of that value internally.
+    iii)When we update the state (via the setter function), React re-renders the component with the new state.
+4. Lifting State Up (Props): For closely related components (like parent/child or siblings), move the state to the nearest common ancestor. The parent passes the state down to children as props and passes callback functions to allow children to update the state.
+5. In React, handling a click event is simple.
+    i) first define an event handler function and attach it to the element using the onClick attribute.
+    ii) export default ClickButton; 
+    when the button is clicked, the handleClick function updates the message.
