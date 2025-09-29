@@ -1,10 +1,14 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
-const TaskCard = ({card,inProgress,setInProgress,removeTicket}) => {
+const TaskCard = ({card,inProgress,setInProgress,removeTicket,inResolved,setInResolved,resolvedTickets,
+    setResolvedTickets}) => {
     const handleCompleteBtn=()=>{
         setInProgress(inProgress - 1)
+        setInResolved(inResolved + 1)
+        setResolvedTickets([...resolvedTickets, card]);
         removeTicket(card)
-        alert("task completed")
+        toast("task completed")
         return
     }
     return (

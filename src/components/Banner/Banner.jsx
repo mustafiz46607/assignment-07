@@ -2,7 +2,7 @@ import React from 'react';
 import image1 from '../../assets/vector1.png'
 import image2 from '../../assets/vector2.png'
 
-const Banner = ({inProgress}) => {
+const Banner = ({inProgress,inResolved,}) => {
     return (
         <div className="md:flex justify-between text-center items-center text-white max-w-[1220px] mx-auto mb-5">
 
@@ -20,7 +20,7 @@ const Banner = ({inProgress}) => {
                 <img src={image2} className="absolute right-0 top-1/2 -translate-y-1/2 w-[250px] h-full" />
                 <div className="relative z-10 pt-20">
                     <h2 className="text-xl">Resolved</h2>
-                    <span className="text-3xl font-bold pt-3">0</span>
+                    <span className="text-3xl font-bold pt-3">{inResolved}</span>
                 </div>
             </div>
         </div>

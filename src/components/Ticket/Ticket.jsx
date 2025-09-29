@@ -2,15 +2,16 @@ import React from 'react';
 import circleG from '../../assets/circle.png'
 import calender from '../../assets/calender.png'
 import circleY from '../../assets/circleY.png'
+import { toast } from 'react-toastify';
 
 
 
-const Ticket = ({ tic, setInProgress, inProgress, clickedTicket, setClickedTicket}) => {
+const Ticket = ({ tic, setInProgress, inProgress, clickedTicket, setClickedTicket,}) => {
 
     const handleClicked = (ticData) => {
         setInProgress(inProgress + 1)
         setClickedTicket([...clickedTicket, ticData])
-        alert("added to task status")
+        toast("added to task status")
         return
     }
     return (

@@ -4,7 +4,7 @@ import TaskStatus from '../Task-status/TaskStatus';
 
 
 
-const Tickets = ({ ticketsPromise, setInProgress, inProgress, clickedTicket, setClickedTicket,removeTicket }) => {
+const Tickets = ({ ticketsPromise, setInProgress, inProgress, clickedTicket, setClickedTicket,removeTicket,inResolved,setInResolved,setResolvedTickets,resolvedTickets }) => {
     // console.log(tic)
     const ticketsData = use(ticketsPromise)
     return (
@@ -22,6 +22,10 @@ const Tickets = ({ ticketsPromise, setInProgress, inProgress, clickedTicket, set
                             clickedTicket={clickedTicket}
                             setClickedTicket={setClickedTicket}
                             removeTicket={removeTicket}
+                            inResolved={inResolved}
+                            setInResolved={setInResolved}
+                            resolvedTickets={resolvedTickets}
+                            setResolvedTickets={setResolvedTickets}
                         ></Ticket>)
                     }
                 </div>
@@ -32,6 +36,10 @@ const Tickets = ({ ticketsPromise, setInProgress, inProgress, clickedTicket, set
             setInProgress={setInProgress}  
             setClickedTicket={setClickedTicket}
             removeTicket={removeTicket}
+            inResolved={inResolved}
+            setInResolved={setInResolved}
+            resolvedTickets={resolvedTickets}
+            setResolvedTickets={setResolvedTickets}
             ></TaskStatus>
         </div>
 
