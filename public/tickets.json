@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Login issue",
+    "description": "User unable to log in with correct credentials.",
+    "customer": "Alice Johnson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-20"
+  },
+  {
+    "id": 2,
+    "title": "Payment failure",
+    "description": "Credit card payment not processing for multiple customers.",
+    "customer": "Bob Smith",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-09-19"
+  },
+  {
+    "id": 3,
+    "title": "Slow website loading",
+    "description": "Pages take more than 10 seconds to load.",
+    "customer": "Carla Reyes",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-18"
+  },
+  {
+    "id": 4,
+    "title": "Bug in cart update",
+    "description": "Items not updating properly when quantity is changed.",
+    "customer": "David Kim",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-17"
+  },
+  {
+    "id": 5,
+    "title": "Email not received",
+    "description": "Order confirmation emails not sent to customers.",
+    "customer": "Ella Brown",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-16"
+  },
+  {
+    "id": 6,
+    "title": "App crash on checkout",
+    "description": "Mobile app crashes during checkout process.",
+    "customer": "Frank Lee",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-09-15"
+  },
+  {
+    "id": 7,
+    "title": "Search not working",
+    "description": "Search returns no results even for valid keywords.",
+    "customer": "Grace Wilson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-15"
+  },
+  {
+    "id": 8,
+    "title": "Profile update error",
+    "description": "Users unable to update their profile information.",
+    "customer": "Henry Adams",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-14"
+  },
+  {
+    "id": 9,
+    "title": "Duplicate order issue",
+    "description": "Some customers are charged twice for the same order.",
+    "customer": "Ivy Chen",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-09-13"
+  },
+  {
+    "id": 10,
+    "title": "Notification delay",
+    "description": "Push notifications delayed by more than 30 minutes.",
+    "customer": "Jack Taylor",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-12"
+  },
+  {
+    "id": 11,
+    "title": "Broken image links",
+    "description": "Product images not displaying on several category pages.",
+    "customer": "Karen Lopez",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-11"
+  },
+  {
+    "id": 12,
+    "title": "Refund not processed",
+    "description": "Refund requests remain pending beyond 7 business days.",
+    "customer": "Liam Walker",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-10"
+  }
+]
