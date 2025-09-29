@@ -1,8 +1,11 @@
-import React, { use } from 'react';
+import React, { use, } from 'react';
 import Ticket from '../Ticket/Ticket';
 import TaskStatus from '../Task-status/TaskStatus';
 
-const Tickets = ({ ticketsPromise }) => {
+
+
+const Tickets = ({ ticketsPromise, setInProgress, inProgress, clickedTicket, setClickedTicket,removeTicket }) => {
+    // console.log(tic)
     const ticketsData = use(ticketsPromise)
     return (
         <div className='max-w-[1220px] mx-auto mb-5 md:grid grid-cols-4'>
@@ -12,12 +15,24 @@ const Tickets = ({ ticketsPromise }) => {
                 <div className=' md:grid grid-cols-2 '>
 
                     {
-                        ticketsData.map(tic => <Ticket key={tic.id} tic={tic}></Ticket>)
+                        ticketsData.map(tic => <Ticket key={tic.id}
+                            tic={tic}
+                            setInProgress={setInProgress}
+                            inProgress={inProgress}
+                            clickedTicket={clickedTicket}
+                            setClickedTicket={setClickedTicket}
+                            removeTicket={removeTicket}
+                        ></Ticket>)
                     }
                 </div>
 
             </div>
-                <TaskStatus ></TaskStatus>
+            <TaskStatus clickedTicket={clickedTicket} 
+            inProgress={inProgress} 
+            setInProgress={setInProgress}  
+            setClickedTicket={setClickedTicket}
+            removeTicket={removeTicket}
+            ></TaskStatus>
         </div>
 
     );
